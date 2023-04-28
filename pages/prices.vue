@@ -134,26 +134,23 @@ tr:nth-child(odd){
 .head_table {
     background: #bdd0d0;
 }
-.wrapperlink{
-    width: 100vw;
-    }
 .lnkbtn{
-    padding: 1vw;
+    padding: 5px;
     border-radius: 50px;
     cursor: pointer;
+    margin-top: 28px;
     }
 .lnkbtn:hover{
     color: white;
     background-color: #EF6900;    
 }
 .wrapli{
-    width:61vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 } 
 .lnk{
     margin-left: auto;
-    margin-top: 3vw;
+    margin-top: 10px;
 }   
 </style>
