@@ -322,7 +322,7 @@
           <div class="one_scheme">
             <img src="pictures/img/calc/tabletop1_new2.jpg" />
 
-            <label style="top: 187px; left: -50px">
+            <label  class="label1">
               <select v-model="frontEdge">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1">
@@ -334,7 +334,7 @@
               </select>
             </label>
 
-            <label style="top: 153px; left: -50px">
+            <label  class="label2">
               <select v-model="leftEdge">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1">
@@ -345,7 +345,7 @@
                 </option>
               </select>
             </label>
-            <label style="top: 28px; left: 409px">
+            <label  class="label3">
               <select v-model="farEdge">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1">
@@ -356,7 +356,7 @@
                 </option>
               </select>
             </label>
-            <label style="top: 236px; left: 733px">
+            <label style="top: 236px; left: 733px" class="label4">
               <select v-model="rightEdge">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1" selected="selected">
@@ -368,12 +368,12 @@
               </select>
             </label>
             <!-- Ширина -->
-            <label style="top: 91px; left: 165px">
+            <label  class="label5">
               <input type="number" v-model="tableWidth" placeholder="0" />
             <!--  <span>мм</span> -->
             </label>
             <!-- Длина -->
-            <label style="top: 109px; left: 433px">
+            <label  class="label6">
               <input type="number" v-model="tableLength" placeholder="0" />
              <!-- <span>мм</span> -->
             </label>
@@ -466,7 +466,7 @@
           <div class="one_scheme">
             <img src="pictures/img/calc/tabletop2_new2.jpg" alt />
 
-            <label style="top: 197px; left: 286px">
+            <label  class="label7">
               <select v-model="frontEdge">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1" selected="selected">
@@ -477,7 +477,7 @@
                 </option>
               </select>
             </label>
-            <label style="top: 206px; left: -51px">
+            <label  class="label8">
               <select v-model="leftEdge">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1" selected="selected">
@@ -488,7 +488,7 @@
                 </option>
               </select>
             </label>
-            <label style="top: -18px; left: 299px">
+            <label  class="label9">
               <select v-model="farEdge">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1">
@@ -499,7 +499,7 @@
                 </option>
               </select>
             </label>
-            <label style="top: -24px; left: 467px">
+            <label  class="label10">
               <select v-model="farEdge2">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1">
@@ -510,7 +510,7 @@
                 </option>
               </select>
             </label>
-            <label style="top: 195px; left: 736px">
+            <label  class="label11">
               <select v-model="rightEdge">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1" selected="selected">
@@ -521,7 +521,7 @@
                 </option>
               </select>
             </label>
-            <label style="top: 228px; left: 553px">
+            <label  class="label12">
               <select v-model="frontEdge2">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1" selected="selected">
@@ -532,19 +532,19 @@
                 </option>
               </select>
             </label>
-            <label style="top: 103px; left: 94px">
+            <label  class="label13">
               <input type="number" v-model="tableWidthLeft" placeholder="0" />
               
             </label>
-            <label style="top: 72px; left: 240px">
+            <label  class="label14">
               <input type="number" v-model="tableLengthLeft" placeholder="0" />
              
             </label>
-            <label style="top: 62px; left: 556px">
+            <label  class="label15">
               <input type="number" v-model="tableLengthRight" placeholder="0" />
               
             </label>
-            <label style="top: 82px; left: 690px">
+            <label  class="label16">
               <input type="number" v-model="tableWidthRight" placeholder="0" />
               
             </label>
@@ -656,7 +656,7 @@
           <div class="one_scheme">
             <img src="pictures/img/calc/tabletop3_new.jpg" />
 
-            <label style="top: 298px; left: 280px">
+            <label  class="label17">
               <select v-model="pEdge_1">
                 <option label="без обработки" value="0">без обработки</option>
                 <option
@@ -671,7 +671,7 @@
                 </option>
               </select>
             </label>
-            <label style="top: 299px; left: 442px">
+            <label  class="label18">
               <select v-model="pEdge_2">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1" selected="selected">
@@ -682,7 +682,7 @@
                 </option>
               </select>
             </label>
-            <label style="top: 203px; left: -47px">
+            <label  class="label19">
               <select v-model="pEdge_3">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1" selected="selected">
@@ -693,7 +693,7 @@
                 </option>
               </select>
             </label>
-            <label style="top: -23px; left: 165px">
+            <label  class="label20">
               <select v-model="pEdge_4">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1" selected="selected">
@@ -704,7 +704,7 @@
                 </option>
               </select>
             </label>
-            <label style="top: 8px; left: 327px">
+            <label  class="label21">
               <select v-model="pEdge_5">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1" selected="selected">
@@ -715,7 +715,7 @@
                 </option>
               </select>
             </label>
-            <label style="top: -26px; left: 459px">
+            <label  class="label22">
               <select v-model="pEdge_6">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1">
@@ -730,7 +730,7 @@
                 </option>
               </select>
             </label>
-            <label style="top: 194px; left: 723px">
+            <label  class="label23">
               <select v-model="pEdge_7">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1" selected="selected">
@@ -741,7 +741,7 @@
                 </option>
               </select>
             </label>
-            <label style="top: 276px; left: 632px">
+            <label  class="label24">
               <select v-model="pEdge_8">
                 <option label="без обработки" value="0">без обработки</option>
                 <option label="торцевая кромка" value="1" selected="selected">
@@ -753,11 +753,11 @@
               </select>
             </label>
 
-            <label style="top: 161px; left: 360px">
+            <label  class="label25">
               <input type="number" v-model="p_tableLeftWidth" placeholder="0" />
               <span>мм</span>
             </label>
-            <label style="top: 127px; left: 121px">
+            <label  class="label26">
               <input
                 type="number"
                 v-model="p_tableLeftLength"
@@ -765,7 +765,7 @@
               />
               <span>мм</span>
             </label>
-            <label style="top: 156px; left: 98px">
+            <label  class="label27">
               <input
                 type="number"
                 v-model="p_table_Far_LeftWidth"
@@ -773,7 +773,7 @@
               />
               <span>мм</span>
             </label>
-            <label style="top: 62px; left: 264px">
+            <label  class="label28">
               <input
                 type="number"
                 v-model="p_table_Far_LeftLength"
@@ -781,7 +781,7 @@
               />
               <span>мм</span>
             </label>
-            <label style="top: 63px; left: 558px">
+            <label  class="label29">
               <input
                 type="number"
                 v-model="p_table_Far_RightLength"
@@ -789,7 +789,7 @@
               />
               <span>мм</span>
             </label>
-            <label style="top: 114px; left: 697px">
+            <label  class="label30">
               <input
                 type="number"
                 v-model="p_table_Far_RightWidth"
@@ -866,11 +866,11 @@
       <!-- ======================== СХЕМА ПОДОКОННИК ================================ -->
       <div v-if="typeMain == 2" class="one_scheme">
         <img alt src="pictures/img/calc/sill_new.jpg" />
-        <label style="top: 414px; left: 607px">
+        <label  class="label31">
           <input type="number" v-model="tableWidth" placeholder="0" />
           <span>мм</span>
         </label>
-        <label style="top: 562px; left: 398px">
+        <label  class="label32">
           <input type="number" v-model="tableLength" placeholder="0" />
           <span>мм</span>
         </label>
@@ -879,35 +879,35 @@
       <!-- ================ СХЕМА ВАНАЯ - УМЫВАЛЬНИК =================================== -->
       <div v-if="typeMain == 3" class="one_scheme">
         <img src="pictures/img/calc/new-bathroom.jpg" />
-        <label style="top: 288px; left: 74px">
+        <label  class="label33">
           <select v-model="frontEdge">
             <option value="0">без обработки</option>
             <option value="1">торцевая кромка</option>
             <option value="2">стеновой бортик</option>
           </select>
         </label>
-        <label style="top: 105px; left: 74px">
+        <label  class="label34">
           <select v-model="leftEdge">
             <option value="0">без обработки</option>
             <option value="1">торцевая кромка</option>
             <option value="2">стеновой бортик</option>
           </select>
         </label>
-        <label style="top: 170px; left: 74px">
+        <label  class="label35">
           <select v-model="farEdge">
             <option value="0">без обработки</option>
             <option value="1">торцевая кромка</option>
             <option value="2">стеновой бортик</option>
           </select>
         </label>
-        <label style="top: 331px; left: 74px">
+        <label  class="label36">
           <select v-model="rightEdge">
             <option value="0">без обработки</option>
             <option value="1">торцевая кромка</option>
             <option value="2">стеновой бортик</option>
           </select>
         </label>
-        <label style="top: 89px; left: 313px">
+        <label  class="label37">
           <input
             type="number"
             class="moika-input"
@@ -916,7 +916,7 @@
           />
           <span>мм</span>
         </label>
-        <label style="top: 73px; left: 481px">
+        <label  class="label38">
           <input
             type="number"
             class="moika-input"
@@ -5096,5 +5096,328 @@ input[type="number"] {
 .form_radio_btn input[type=radio]:disabled + label {
 	background: #efefef;
 	color: #666;
+}
+/* Расположение размеров на картинке */
+.label1 {
+  top: 187px; left: -50px;
+}
+.label2 {
+  top: 153px; left: -50px;
+}
+.label3 {
+  top: 28px; left: 409px;
+}
+.label4 {
+  top: 236px; left: 733px;
+}
+.label5 {
+  top: 91px; left: 165px;
+}
+.label6 {
+  top: 109px; left: 433px;
+}
+.label7 {
+  top: 197px; left: 286px;
+}
+.label8 {
+  top: 206px; left: -51px;
+}
+.label9 {
+  top: -18px; left: 299px;
+}
+.label10 {
+  top: -24px; left: 467px;
+}
+.label11 {
+  top: 195px; left: 736px;
+}
+.label12 {
+  top: 228px; left: 553px;
+}
+.label13 {
+  top: 103px; left: 94px;
+}
+.label14 {
+  top: 72px; left: 240px;
+}
+.label15 {
+  top: 62px; left: 556px;
+}
+.label16 {
+  top: 82px; left: 690px;
+}
+.label17 {
+  top: 298px; left: 280px;
+}
+.label18 {
+  top: 299px; left: 442px;
+}
+.label19 {
+  top: 203px; left: -47px;
+}
+.label20 {
+  top: -23px; left: 165px;
+}
+.label21 {
+  top: 8px; left: 327px;
+}
+.label22 {
+  top: -26px; left: 459px;
+}
+.label23 {
+  top: 194px; left: 723px;
+}
+.label24 {
+  top: 276px; left: 632px;
+}
+.label25 {
+  top: 161px; left: 360px;
+}
+.label26 {
+  top: 127px; left: 121px;
+}
+.label27 {
+  top: 156px; left: 98px;  
+}
+.label28 {
+  top: 62px; left: 264px;
+}
+.label29 {
+  top: 63px; left: 558px;
+}
+.label30 {
+  top: 114px; left: 697px;
+}
+.label31 {
+  top: 414px; left: 607px;
+}
+.label32 {
+  top: 562px; left: 398px;
+}
+.label33 {
+  top: 288px; left: 74px;
+}
+.label34 {
+  top: 105px; left: 74px;
+}
+.label35 {
+  top: 170px; left: 74px;
+}
+.label36 {
+  top: 331px; left: 74px;
+}
+.label37 {
+  top: 89px; left: 313px;
+}
+.label38 {
+  top: 73px; left: 481px;
+}
+
+/**/
+@media (max-width: 800px){
+  .moika-block {
+    flex: 42%;
+    max-width: 42%;
+  }
+  .moika-block h5 {
+    font-size: 13px;
+  }
+  .calc_wrapper .select li {
+    width: 43%;
+  }
+  .calc_wrapper .select li .img {
+    width: 100%;
+  }
+  .title_radio {
+    font-size: 13px;
+  }
+  .calc_wrapper .scheme .one_scheme select {
+    font-size: 10px;
+  }
+  /* Расположение размеров на картинке */
+.label1 {
+  top: 187px; left: 44px;
+}
+.label2 {
+  top: 137px; left: 40px;
+}
+.label3 {
+  top: 28px; left: 409px;
+}
+.label4 {
+  top: 236px; left: 733px;
+}
+.label5 {
+  top: 91px; left: 165px;
+}
+.label6 {
+  top: 109px; left: 433px;
+}
+.label7 {
+  top: 197px; left: 286px;
+}
+.label8 {
+  top: 206px; left: 1px;
+}
+.label9 {
+  top: 0; left: 299px;
+}
+.label10 {
+  top: -1px; left: 467px;
+}
+.label11 {
+  top: 195px; left: 736px;
+}
+.label12 {
+  top: 228px; left: 553px;
+}
+.label13 {
+  top: 103px; left: 94px;
+}
+.label14 {
+  top: 72px; left: 240px;
+}
+.label15 {
+  top: 62px; left: 556px;
+}
+.label16 {
+  top: 82px; left: 690px;
+}
+.label17 {
+  top: 298px; left: 280px;
+}
+.label18 {
+  top: 299px; left: 442px;
+}
+.label19 {
+  top: 203px; left: 0px;
+}
+.label20 {
+  top: -1px; left: 192px;
+}
+.label21 {
+  top: 8px; left: 327px;
+}
+.label22 {
+  top: -1px; left: 459px;
+}
+.label23 {
+  top: 194px; left: 723px;
+}
+.label24 {
+  top: 276px; left: 632px;
+}
+.label25 {
+  top: 161px; left: 360px;
+}
+.label26 {
+  top: 127px; left: 121px;
+}
+.label27 {
+  top: 156px; left: 98px;  
+}
+.label28 {
+  top: 62px; left: 264px;
+}
+.label29 {
+  top: 63px; left: 558px;
+}
+.label30 {
+  top: 114px; left: 697px;
+}
+.label31 {
+  top: 414px; left: 607px;
+}
+.label32 {
+  top: 562px; left: 398px;
+}
+.label33 {
+  top: 288px; left: 74px;
+}
+.label34 {
+  top: 105px; left: 74px;
+}
+.label35 {
+  top: 170px; left: 74px;
+}
+.label36 {
+  top: 331px; left: 74px;
+}
+.label37 {
+  top: 89px; left: 313px;
+}
+.label38 {
+  top: 73px; left: 481px;
+}
+ 
+   .calc_wrapper .select_type li {
+    width: 22%;
+    margin: 0 20px 5px 0;
+  }
+  .calc_wrapper .select_type li i {
+    width: 100%;
+    background: no-repeat left/300% url("/pictures/img/calc/type-calc.jpg");
+  background-position: left;
+  height: 64px;
+  }
+  .calc_wrapper .select_type li span {
+    font-size: 10px;
+  }
+  .calc_wrapper .select.select_table li {
+    width: 65px;
+    height: 65px;
+  }
+  .calc_wrapper .select li {
+    font-size: 11px;
+  }
+  .select_material span {
+    font-size: 10px !important;
+  }
+  .select_material li {
+    margin-right: 5px !important;
+    padding: 5px 5px !important;
+  }
+  .calc_wrapper {
+    padding: 0;
+  }
+  .main-container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .changeParams {
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
+  .link-see {
+    font-size: 12px;
+  }
+  .filteredPalitra {
+    margin-left: 0px;
+    margin-top: 8px;
+  }
+  
+  .card-plitka-cards .card-plitka_item {
+    width: 40%;
+  }
+  .modal-content img {
+    width: 100%;
+  }
+  .one_scheme {
+   overflow-x:scroll;
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
 }
 </style>

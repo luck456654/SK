@@ -12,7 +12,7 @@
             <li class="nav-item-aside"><a class="nav-link-aside" href="https://стильный-камень.рф/каталог/стеновые-панели.html">Стеновые панели</a></li>
             <li class="nav-item-aside"><a class="nav-link-aside" href="https://стильный-камень.рф/каталог/столы.html">Столы</a></li>
             <li class="nav-item-aside"><a class="nav-link-aside" href="https://стильный-камень.рф/каталог/лестницы-и-ступени-из-камня.html">Лестницы</a></li>
-            <li class="nav-item-aside"><a class="nav-link-aside" href="https://стильный-камень.рф/каталог/пол-из-камня.html">Полы</a></li>
+          <!-- <li class="nav-item-aside"><a class="nav-link-aside" href="https://стильный-камень.рф/каталог/пол-из-камня.html">Полы</a></li> --> 
             <li class="nav-item-aside"><a class="nav-link-aside" href="https://стильный-камень.рф/каталог/интегрированные-мойки.html">Интегрированные мойки</a></li>
             <li class="nav-item-aside"><a class="nav-link-aside" href="https://стильный-камень.рф/каталог/каталог-кромок.html">Каталог кромок</a></li>
             <li class="nav-item-aside"><a class="nav-link-aside" href="https://стильный-камень.рф/каталог/каталог-плинтусов/">Каталог плинтусов</a></li>

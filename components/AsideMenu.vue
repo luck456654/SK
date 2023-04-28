@@ -23,7 +23,7 @@
                                   <li class="small-padding-left-menu"><nuxt-link class="nav-link-aside" to="/каталог/столешницы/столешницы-из-акрилового-камня.html" append title="Столешницы из акрилового камня">Из акрилового камня</nuxt-link></li>
                                   <li class="small-padding-left-menu"><nuxt-link class="nav-link-aside" to="/каталог/столешницы/столешницы-из-жидкого-камня.html" append title="Столешницы из жидкого гранита">Из жидкого гранита</nuxt-link></li>
                                   <li class="small-padding-left-menu"><nuxt-link class="nav-link-aside" to="/каталог/столешницы/столешницы-из-натурального-камня.html" append title="Столешницы из натурального камня">Из натурального камня</nuxt-link></li>
-                                  <li class="small-padding-left-menu"><nuxt-link class="nav-link-aside" to="/каталог/столешницы/столешницы-из-массива-дерева.html" append title="Столешницы из массива дерева">Из массива дерева</nuxt-link></li>
+                              <!--    <li class="small-padding-left-menu"><nuxt-link class="nav-link-aside" to="/каталог/столешницы/столешницы-из-массива-дерева.html" append title="Столешницы из массива дерева">Из массива дерева</nuxt-link></li> -->
                                </ul>
                            </li>
                            <li class="title-left-submenu">Общая информация
@@ -188,7 +188,7 @@
                         </ul>
                         </transition>
                      </li>
-                     <li >
+                   <!--  <li >
                         <h5 class="toggle-pol left-menu-h5" title="Пол из камня" v-on:click="showKatalogFloor = !showKatalogFloor">
                         Полы
                         <span class="caret-default" v-if="!showKatalogFloor"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
@@ -207,7 +207,7 @@
 
                         </ul>
                         </transition>
-                     </li>
+                     </li> -->
 
                      <li class="small-left-menu"><nuxt-link to="/каталог/интегрированные-мойки.html" append title="Интегрированные мойки">Интегрированные мойки</nuxt-link></li>
                      <li class="small-left-menu"><nuxt-link to="/каталог/каталог-кромок.html" append title="Каталог кромок">Каталог кромок</nuxt-link></li>
@@ -270,11 +270,11 @@
                        Акции и скидки
                         </a>
                      </li>
-                     <li class="small-left-menu">
+                    <!-- <li class="small-left-menu">
                         <a href="https://стильный-камень.рф/files/price_2021.rar" target="_blank">
                        Прайс-лист
                         </a>
-                     </li>
+                     </li> -->
                      <li class="small-left-menu">
                         <a href="https://стильный-камень.рф/политика-конфенденциальности.html">
                        Пользовательское соглашение

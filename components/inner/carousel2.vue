@@ -323,4 +323,9 @@ export default {
 .modal-content img {
   max-height: 90vh;
 }
+@media (max-width: 800px){
+.card-carousel {
+    width: 100% !important;
+  }
+}
 </style>

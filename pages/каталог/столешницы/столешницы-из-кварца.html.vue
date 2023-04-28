@@ -40,116 +40,7 @@
 <div class="col-xs-12">
                <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 main-content">
-                    <h2>Кварцевые столешницы для кухни на заказ</h2>
-                     <picture>
-                        <source type="image/webp" srcset="https://стильный-камень.рф/pictures/stoleshnitsi/stoleshka-icon-kvarc.webp" class="float-images" alt="Кварцевые столешницы для кухни на заказ">
-                        <source type="image/png" srcset="https://стильный-камень.рф/pictures/stoleshnitsi/stoleshka-icon-kvarc.png" class="float-images" alt="Кварцевые столешницы для кухни на заказ">
-                        <img src="https://стильный-камень.рф/pictures/stoleshnitsi/stoleshka-icon-kvarc.png" class="float-images" alt="Кварцевые столешницы для кухни на заказ">
-                      </picture>
-                   <p> Кварцевый агломерат – инновационный материал для изготовления столешниц, барных стоек, подоконников и оформления интерьера.
-                   Материал получают путем смешивания кварцевой крошки и полиэфирных гранул под действием высокой температуры.
-                   Столешницы из кварца эстетичные, прочные, долговечные, поэтому их широко применяют для отделки современных квартир.
-                </p>
-                <nuxt-link class="last_works" to="/каталог/столешницы/галерея-работ.html" >Посмотреть наши последние работы</nuxt-link>
-                <br>
-                <p class="another-article"> <span style="color: #f26e01;">«Стильный-Камень»</span> профессионально произведет замеры, качественно изготовит, установит любой формы и размеров столешницу из кварцевого агломерата в требуемые сроки в Москве и других населенных пунктах Московской, Владимирской и Рязанской областей.</p>
-                <div>
-                  <h3 id="animate1" v-if="$store.state.visitedGranit==1">Спросить у менеджера различия жидкого гранита и кварцевого агломерата</h3>
-                  <h3 id="animate1" v-else>Заказать бесплатный расчёт стоимости</h3>
-                  <Difference />
-                  <br>
-                </div>
-                <p>В коллекции – более 1000 вариантов текстуры и цвета. В работе применяются материалы известных брендов, таких как
-                <b>Avant Quartz</b>, <b>Caesarstone</b>, <b>Santa Margeritha</b>, <b>Silestone</b> и пр.
-                </p>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                  <KamenKvartcz />
-                </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 for-table" style="margin-bottom:20px;">
-                            <h2>Стоимость услуг изготовления</h2>
-                        <table class="table table-article">
-                        <thead>
-                        <tr class="tr-grey">
-                          <th>Столешница/услуга</th>
-                          <th>Цена</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                              <td class="first-td">TECHNISTONE</td>
-                              <td data-label="Цена:">От 4300 руб./м<sup>2</sup></td>
-                            </tr>
-                           <tr>
-                              <td class="first-td">SAMSUNG RADIANZ</td>
-                              <td data-label="Цена:">От 4900 руб./м<sup>2</sup></td>
-                            </tr>
-                            <tr>
-                              <td class="first-td">CAESARSTONE</td>
-                              <td data-label="Цена:">От 5300 руб./м<sup>2</sup></td>
-                            </tr>
-                            <tr>
-                              <td class="first-td">SILESTONE</td>
-                              <td data-label="Цена:">От 5800 руб./м<sup>2</sup></td>
-                            </tr>
-                             <tr>
-                              <td class="first-td">VICOSTONE</td>
-                              <td data-label="Цена:">От 6500 руб./м<sup>2</sup></td>
-                            </tr>
-                            <tr>
-                              <td class="first-td">AVANT QUARTZ</td>
-                              <td data-label="Цена:">От 9000 руб./м<sup>2</sup></td>
-                            </tr>
-                            <tr>
-                              <td class="first-td">CAMBRIA</td>
-                              <td data-label="Цена:">От 11600 руб./м<sup>2</sup></td>
-                            </tr>
-                            <tr>
-                              <td class="first-td">Мойка из камня</td>
-                              <td data-label="Цена:">От 5500 руб.</td>
-                            </tr>
-                            <tr>
-                             <td class="first-td">Доставка изделия</td>
-                              <td data-label="Цена:">От 1100 руб</td>
-                            </tr>
-                            <tr>
-                             <td class="first-td">Монтаж изделия</td>
-                              <td data-label="Цена:">От 1000 руб</td>
-                            </tr>
-                         </tbody>
-                        </table>
-                       <div style="clear:both;"></div>
-                    <div class="bottom-box-img"><img class="bottom-left-ugol" src="https://стильный-камень.рф/assets/newdisign/img/back-first-h2-bottom.png"></div>
-                </div>
-                </div>
-            <div class="main-content">
-              <h2>Частые вопросы</h2>
-                <h3 class="question" @click="currentQuestion = 0">Уход за столешницей</h3>
-                <p v-show="currentQuestion == 0">Каменная столешница требует бережного ухода и при наличии подобных элементов кухонной мебели необходимо знать, 
-                  как правильно их эксплуатировать. Узнать все тонкости можно в нашей статье 
-                  <a target="_blank" href="https://стильный-камень.рф/статьи/уход-за-столешницей-из-камня.html">Уход за столешницей</a>.</p>
-                <h3 class="question" @click="currentQuestion = 1">Какая разница между видами камней</h3>
-                <p v-show="currentQuestion == 1">Выбираете столешницу и не знаете, изделие из какого материала предпочесть? Ознакомьтесь с особенностями различных видов 
-                  <a target="_blank" href="https://стильный-камень.рф/статьи/материалы-для-изготовления-столешниц.html">Плюсы и минусы материалов</a>.</p>
-                <h3 class="question" @click="currentQuestion = 2">Почему индивидуальный заказ</h3>
-                <p v-show="currentQuestion == 2">Не стоит бежать в мебельный центр, где Вам предложат несколько версий, не вписывающихся в параметры кухни. Оцените преимущества 
-                  заказа под размеры: <a target="_blank" href="https://стильный-камень.рф/статьи/столешница-по-индивидуальным-размерам.html">Почему индивидуальный заказ</a>.</p>
-                <h3 class="question" @click="currentQuestion = 3">Какую кухонную мойку выбрать</h3>
-                <p v-show="currentQuestion == 3">Любое кухонное оборудование должно быть не только красивым, но и комфортным, многофункциональным. А ещё основная масса покупателей 
-                  стремится к разумной экономии. Как выбрать мойку и не прогадать - <a target="_blank" href="https://стильный-камень.рф/статьи/кухонные-мойки-камень.html">Советы по выбору мойки из камня</a>.</p>
-                <h3 class="question" @click="currentQuestion = 4">Что нужно знать о замере и монтаже</h3>
-                <p v-show="currentQuestion == 4">прежде чем заказать столешницу, необходимо провести замеры. Ведь очень важно, чтобы столешница идеально вписывалась в конструкцию кухни. 
-                  Узнать все тонкости по замеру и монтажу можете в наших статьях: <a target="_blank" href="https://стильный-камень.рф/статьи/столешница-по-индивидуальным-размерам.html">Процесс замера столешницы</a> 
-                и <a target="_blank" href="https://стильный-камень.рф/статьи/монтаж-столешницы.html">Особенности монтажа столешницы</a>.
-                </p>
-                <h2 style="padding-left: 15px;">Почему мы</h2>
-               <Pochemu/>
-                <hr class="no-mobile"><br>
-                <div class="row">
-                  <div class="col-sm-12 col-md-12 podbor-col">
-                    <PodborCalc />
-                  </div>
-                </div>
-     <h2>Как выглядят столешницы из кварцевого агломерата в нашем исполнении</h2>
+                  <h2>Как выглядят столешницы из кварцевого агломерата в нашем исполнении</h2>
      <div v-if="$store.state.ismobile == 'smartphone'">
               <h3>Прямые столешницы: для малогабаритной кухни</h3>
                   <div class="col-sm-12 i-tab owl-paltra_wrapper exampels_photo">
@@ -352,6 +243,117 @@
                     <div class="open2" v-else></div>
                 </div>
      </div>
+                    <h2>Кварцевые столешницы для кухни на заказ</h2>
+                     <picture>
+                        <source type="image/webp" srcset="https://стильный-камень.рф/pictures/stoleshnitsi/stoleshka-icon-kvarc.webp" class="float-images" alt="Кварцевые столешницы для кухни на заказ">
+                        <source type="image/png" srcset="https://стильный-камень.рф/pictures/stoleshnitsi/stoleshka-icon-kvarc.png" class="float-images" alt="Кварцевые столешницы для кухни на заказ">
+                        <img src="https://стильный-камень.рф/pictures/stoleshnitsi/stoleshka-icon-kvarc.png" class="float-images" alt="Кварцевые столешницы для кухни на заказ">
+                      </picture>
+                   <p> Кварцевый агломерат – инновационный материал для изготовления столешниц, барных стоек, подоконников и оформления интерьера.
+                   Материал получают путем смешивания кварцевой крошки и полиэфирных гранул под действием высокой температуры.
+                   Столешницы из кварца эстетичные, прочные, долговечные, поэтому их широко применяют для отделки современных квартир.
+                </p>
+                <nuxt-link class="last_works" to="/каталог/столешницы/галерея-работ.html" >Посмотреть наши последние работы</nuxt-link>
+                <br>
+                <p class="another-article"> <span style="color: #f26e01;">«Стильный-Камень»</span> профессионально произведет замеры, качественно изготовит, установит любой формы и размеров столешницу из кварцевого агломерата в требуемые сроки в Москве и других населенных пунктах Московской, Владимирской и Рязанской областей.</p>
+                <div>
+                  <h3 id="animate1" v-if="$store.state.visitedGranit==1">Спросить у менеджера различия жидкого гранита и кварцевого агломерата</h3>
+                  <h3 id="animate1" v-else>Заказать бесплатный расчёт стоимости</h3>
+                  <Difference />
+                  <br>
+                </div>
+                <p>В коллекции – более 1000 вариантов текстуры и цвета. В работе применяются материалы известных брендов, таких как
+                <b>Avant Quartz</b>, <b>Caesarstone</b>, <b>Santa Margeritha</b>, <b>Silestone</b> и пр.
+                </p>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                  <KamenKvartcz />
+                </div>
+                <!--                    <div class="col-xs-12 col-sm-12 col-md-12 for-table" style="margin-bottom:20px;">
+                            <h2>Стоимость услуг изготовления</h2>
+                        <table class="table table-article">
+                        <thead>
+                        <tr class="tr-grey">
+                          <th>Столешница/услуга</th>
+                          <th>Цена</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td class="first-td">TECHNISTONE</td>
+                              <td data-label="Цена:">От 4300 руб./м<sup>2</sup></td>
+                            </tr>
+                           <tr>
+                              <td class="first-td">SAMSUNG RADIANZ</td>
+                              <td data-label="Цена:">От 4900 руб./м<sup>2</sup></td>
+                            </tr>
+                            <tr>
+                              <td class="first-td">CAESARSTONE</td>
+                              <td data-label="Цена:">От 5300 руб./м<sup>2</sup></td>
+                            </tr>
+                            <tr>
+                              <td class="first-td">SILESTONE</td>
+                              <td data-label="Цена:">От 5800 руб./м<sup>2</sup></td>
+                            </tr>
+                             <tr>
+                              <td class="first-td">VICOSTONE</td>
+                              <td data-label="Цена:">От 6500 руб./м<sup>2</sup></td>
+                            </tr>
+                            <tr>
+                              <td class="first-td">AVANT QUARTZ</td>
+                              <td data-label="Цена:">От 9000 руб./м<sup>2</sup></td>
+                            </tr>
+                            <tr>
+                              <td class="first-td">CAMBRIA</td>
+                              <td data-label="Цена:">От 11600 руб./м<sup>2</sup></td>
+                            </tr>
+                            <tr>
+                              <td class="first-td">Мойка из камня</td>
+                              <td data-label="Цена:">От 5500 руб.</td>
+                            </tr>
+                            <tr>
+                             <td class="first-td">Доставка изделия</td>
+                              <td data-label="Цена:">От 1100 руб</td>
+                            </tr>
+                            <tr>
+                             <td class="first-td">Монтаж изделия</td>
+                              <td data-label="Цена:">От 1000 руб</td>
+                            </tr>
+                         </tbody>
+                        </table>
+                       <div style="clear:both;"></div>
+                    <div class="bottom-box-img"><img class="bottom-left-ugol" src="https://стильный-камень.рф/assets/newdisign/img/back-first-h2-bottom.png"></div>
+                </div>-->
+
+                </div>
+            <div class="main-content">
+              <h2>Частые вопросы</h2>
+                <h3 class="question" @click="currentQuestion = 0">Уход за столешницей</h3>
+                <p v-show="currentQuestion == 0">Каменная столешница требует бережного ухода и при наличии подобных элементов кухонной мебели необходимо знать, 
+                  как правильно их эксплуатировать. Узнать все тонкости можно в нашей статье 
+                  <a target="_blank" href="https://стильный-камень.рф/статьи/уход-за-столешницей-из-камня.html">Уход за столешницей</a>.</p>
+                <h3 class="question" @click="currentQuestion = 1">Какая разница между видами камней</h3>
+                <p v-show="currentQuestion == 1">Выбираете столешницу и не знаете, изделие из какого материала предпочесть? Ознакомьтесь с особенностями различных видов 
+                  <a target="_blank" href="https://стильный-камень.рф/статьи/материалы-для-изготовления-столешниц.html">Плюсы и минусы материалов</a>.</p>
+                <h3 class="question" @click="currentQuestion = 2">Почему индивидуальный заказ</h3>
+                <p v-show="currentQuestion == 2">Не стоит бежать в мебельный центр, где Вам предложат несколько версий, не вписывающихся в параметры кухни. Оцените преимущества 
+                  заказа под размеры: <a target="_blank" href="https://стильный-камень.рф/статьи/столешница-по-индивидуальным-размерам.html">Почему индивидуальный заказ</a>.</p>
+                <h3 class="question" @click="currentQuestion = 3">Какую кухонную мойку выбрать</h3>
+                <p v-show="currentQuestion == 3">Любое кухонное оборудование должно быть не только красивым, но и комфортным, многофункциональным. А ещё основная масса покупателей 
+                  стремится к разумной экономии. Как выбрать мойку и не прогадать - <a target="_blank" href="https://стильный-камень.рф/статьи/кухонные-мойки-камень.html">Советы по выбору мойки из камня</a>.</p>
+                <h3 class="question" @click="currentQuestion = 4">Что нужно знать о замере и монтаже</h3>
+                <p v-show="currentQuestion == 4">прежде чем заказать столешницу, необходимо провести замеры. Ведь очень важно, чтобы столешница идеально вписывалась в конструкцию кухни. 
+                  Узнать все тонкости по замеру и монтажу можете в наших статьях: <a target="_blank" href="https://стильный-камень.рф/статьи/столешница-по-индивидуальным-размерам.html">Процесс замера столешницы</a> 
+                и <a target="_blank" href="https://стильный-камень.рф/статьи/монтаж-столешницы.html">Особенности монтажа столешницы</a>.
+                </p>
+                <h2 style="padding-left: 15px;">Почему мы</h2>
+               <Pochemu/>
+                <hr class="no-mobile"><br>
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 podbor-col">
+                    <PodborCalc />
+                  </div>
+                </div>
+     
              <h2>Примеры расчета цены</h2>
               <Example />
              <h2>Что понадобится еще для выбора столешницы</h2>

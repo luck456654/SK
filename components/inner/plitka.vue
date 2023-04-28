@@ -223,4 +223,12 @@ export default {
 .modal-content img {
   max-height: 90vh;
 }
+@media (max-width: 800px){
+.card-plitka-cards .card-plitka_item {
+  width: 40%;
+}
+.modal-content img {
+  width: 100%;
+}
+}
 </style>

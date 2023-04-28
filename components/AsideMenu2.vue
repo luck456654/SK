@@ -12,7 +12,7 @@
             <li class="nav-item-aside"><nuxt-link  class="nav-link-aside" to="/">Стеновые панели</nuxt-link ></li>
             <li class="nav-item-aside"><nuxt-link  class="nav-link-aside" to="/">Столы</nuxt-link ></li>
             <li class="nav-item-aside"><nuxt-link  class="nav-link-aside" to="/">Лестницы</nuxt-link ></li>
-            <li class="nav-item-aside"><nuxt-link  class="nav-link-aside" to="/">Полы</nuxt-link ></li>
+          <!--  <li class="nav-item-aside"><nuxt-link  class="nav-link-aside" to="/">Полы</nuxt-link ></li> -->
             <li class="nav-item-aside"><nuxt-link  class="nav-link-aside" to="/">Интегрированные мойки</nuxt-link ></li>
             <li class="nav-item-aside"><nuxt-link  class="nav-link-aside" to="/">Каталог кромок</nuxt-link ></li>
             <li class="nav-item-aside"><nuxt-link  class="nav-link-aside" to="/">Каталог плинтусов</nuxt-link ></li>
@@ -37,7 +37,7 @@
                 <li class="nav-item-aside"><nuxt-link  class="nav-link-aside" to="/">Советы по уходу</nuxt-link ></li>
                 <li class="nav-item-aside"><nuxt-link  class="nav-link-aside" to="/">Партнерам</nuxt-link ></li>
                 <li class="nav-item-aside"><nuxt-link  class="nav-link-aside" to="/">Акции и скидки</nuxt-link ></li>
-                <li class="nav-item-aside"><nuxt-link  class="nav-link-aside" to="/">Прайс-лист</nuxt-link ></li>
+              <!--  <li class="nav-item-aside"><nuxt-link  class="nav-link-aside" to="/">Прайс-лист</nuxt-link ></li>-->
                 <li class="nav-item-aside"><nuxt-link  class="nav-link-aside" to="/">Пользовательское соглашение</nuxt-link ></li>
             </ul>
     </li>

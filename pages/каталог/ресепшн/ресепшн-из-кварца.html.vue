@@ -46,7 +46,7 @@
 
 <h2>Выгодные предложения для клиентов</h2>
 
-<p>В производстве ресепшен из кварцевого агломерата используются материалы ведущих мировых брендов: <strong>PlazaStone, Santa Margeritha, Avant Quartz, Caesarstone, Sileston</strong>.
+<p>В производстве ресепшен из кварцевого агломерата используются материалы ведущих мировых брендов: <strong>Santa Margeritha, Avant Quartz, Caesarstone, Sileston</strong>.
 В короткие сроки мы изготовим и установим стойки самой сложной геометрии, без ограничений в количестве и размерах.</p>
 <p style="margin-bottom: 0px;">Мы гарантируем:</p>
 <ul style="margin-top: 5px;">

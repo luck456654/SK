@@ -31,8 +31,8 @@
       :sinkQuartzArr="sinkQuartzArr"
       :sinkAcrilicArr="sinkAcrilicArr"
       :moikaAcrilicArr="moikaAcrilicArr"
-      :euro=72
-      :usd=70
+      :euro="+euro"
+      :usd="+usd" 
       :status=0
     />    
   <!-- 
@@ -94,8 +94,8 @@ export default {
           moikaAcrilicArr:    res.data.acrilicMoika,      // данные о мойках из Акрилового камня
           //euro:                (res.data.euro*1.12).toFixed(1),              // евро
          // usd:                (res.data.usd*1.12).toFixed(1),               // доллар
-          euro:               res.data.euro,              // евро
-          usd:                res.data.usd,               // доллар
+          euro:               Math.round(res.data.euro*1.05),              // евро
+          usd:                Math.round(res.data.usd*1.05),               // доллар
           //unit:    res.data.unit
         };
       })
