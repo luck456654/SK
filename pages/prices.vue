@@ -135,7 +135,7 @@ tr:nth-child(odd){
     background: #bdd0d0;
 }
 .lnkbtn{
-    padding: 5px;
+    padding: 10px;
     border-radius: 50px;
     cursor: pointer;
     margin-top: 28px;
