@@ -10,7 +10,7 @@
             <caption>
                 <div class="wrapli">
                 <img :src="brands[currentStone]" alt="" />
-                <a href="#" class="lnk" download="https://стильный-камень.рф/exel/brand/Avant_id.xlsx"><input type="button" class="lnkbtn" value="Cкачать прайс-лист"/></a>
+                <a href="#" class="lnk" :download="'https://стильный-камень.рф/'+arrPrice[currentStone]"><input type="button" class="lnkbtn" value="Cкачать прайс-лист"/></a>
              </div>           
             </caption>
                 <tr class="head_table">
@@ -55,8 +55,24 @@ export default {
             'Staron': 'https://стильный-камень.рф/exel/brand/staron.png',
             'Technistone': 'https://стильный-камень.рф/exel/brand/Technistone.png',
             'Vicostone': 'https://стильный-камень.рф/exel/brand/Vicostone.png'
+        },
+        arrPrice:{
+            'Granistone': 'https://стильный-камень.рф/exel/granistone_id.xlsx',
+            'Avant': 'https://стильный-камень.рф/exel/avant_id.xlsx',
+            'Ceasarstone': 'https://стильный-камень.рф/exel/Ceasarstone_id.xlsx',
+            'Cirrus': 'https://стильный-камень.рф/exel/Cirrus.png',
+            'Grandex': 'https://стильный-камень.рф/exel/Grandex_id.xlsx',
+            'Hi-Macs': 'https://стильный-камень.рф/exel/Hi-Macs.png',
+            'Neomarm': 'https://стильный-камень.рф/exel/Neomarm_id.xlsx',
+            'Pluton_Hanex': 'https://стильный-камень.рф/exel/pluton_id.xlsx',
+            'Radianz': 'https://стильный-камень.рф/exel/Radianz_id.xlsx',
+            'Silestone': 'https://стильный-камень.рф/exel/silestone_id.xlsx',
+            'Smartquartz': 'https://стильный-камень.рф/exel/Smartquartz_id.xlsx',
+            'Staron': 'https://стильный-камень.рф/exel/staron_id.xlsx',
+            'Technistone': 'https://стильный-камень.рф/exel/Technistone_id.xlsx',
+            'Vicostone': 'https://стильный-камень.рф/exel/Vicostone_id.xlsx'
         }
-        };
+        }
     }, 
     async asyncData({
         $axios,
