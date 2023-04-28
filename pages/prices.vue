@@ -10,7 +10,7 @@
             <caption>
                 <div class="wrapli">
                 <img :src="brands[currentStone]" alt="" />
-                <a href="#" class="lnk" :download="'https://стильный-камень.рф/'+arrPrice[currentStone]"><input type="button" class="lnkbtn" value="Cкачать прайс-лист"/></a>
+                <a href="#" class="lnk" :download="arrPrice[currentStone]"><input type="button" class="lnkbtn" value="Cкачать прайс-лист"/></a>
              </div>           
             </caption>
                 <tr class="head_table">
