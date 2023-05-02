@@ -1,61 +1,48 @@
 <template>
-    <div>
-      <div class="wrapper">
-        <div v-for="(item, index) in user"
-                  :key="index" class="mark" @click="changeMark" :id="item">        
-                 {{ item }}
-       </div>
-       <div v-for="(item, index) in arr"
-                  :key="index" class="mark" @click="changeMark" :id="item">        
-        {{ item }}
-       </div>
-    </div>
-     
-    <table class="table">
-        <tbody>
-            <tr><th colspan="5" style="background-color: #bdd0d0!important;">Резерв неоплаченных остатков держится 14 календарных дней</th></tr>
-            <tr style="background-color: #bdd0d0!important;"><th>Чертежи необходимо обязательно согласовать с Пашей</th><th colspan="4">проведена инвентаризация 25.01.2023г</th></tr>
-            <tr style="background-color: #bdd0d0!important;"><th>Пистолет записывается с нижнего угла по часовой стрелке</th><th>Менеджер</th><th>Дата</th><th>Статус</th><th>Комментарий</th></tr>
-            <tr style="background-color: #bdd0d0!important;"><th>Цвет</th><th>Размер</th><th colspan="3">Внутр. обозначение</th></tr>
+  <div class="tables">
+    <div class="wrapper">
+      <div v-for="(item, index) in user"
+                :key="index" class="mark" @click="changeMark" :id="item">        
+               {{ item }}
+     </div>
+     <div v-for="(item, index) in arr"
+                :key="index" class="mark" @click="changeMark" :id="item">        
+      {{ item }}
+     </div>
+  </div>
+   
+  <table class="table">
+    <tbody>
+            <tr class="dnone"><th colspan="5" style="background-color: #bdd0d0!important;">Резерв неоплаченных остатков держится 14 календарных дней</th></tr>
+            <tr class="dnone" style="background-color: #bdd0d0!important;"><th>Чертежи необходимо обязательно согласовать с Пашей</th><th colspan="4">проведена инвентаризация 25.01.2023г</th></tr>
+            <tr style="background-color: #bdd0d0!important;"><th>Пистолет записывается с нижнего угла по часовой стрелке</th><th>Менеджер</th><th>Дата</th><th>Статус</th><th>Комментарий</th><th>Оттенок</th><th>Удалить</th></tr>
+            <tr style="background-color: #bdd0d0!important;"><th>Цвет</th><th>Размер</th><th colspan="3">Внутр. обозначение</th><th></th><th></th></tr>
           
              <tr v-for="(item, index) in getell"  
                   :key="index" :class = "(index % 2 != 0)?'bgcolor':'bgc'">
-                  <td class="value wrapp"   v-if="item.id==activeMark"><input :placeholder="item.name" v-model="item.name" class="input inputs"/><input type="button" value="🗑" :id="index" class="btn btninput" @click="delbd(item.idx)"/></td>
-                  <td class="value"  v-if="item.id==activeMark"><input :placeholder="item.nameMen" v-model="item.nameMen" class="input inputs"/></td>
-                  <td class="value"  v-if="item.id==activeMark"><input :placeholder="item.data" v-model="item.data" class="input inputs"/></td>
-                  <td  class="value" v-if="item.id==activeMark"><input :placeholder="item.statusEls" v-model="item.statusEls" class="input inputs"/></td>
-                  <td class="value"  v-if="item.id==activeMark"><input :placeholder="item.comments" v-model="item.comments" class="input inputs"/></td>
-                
+                  <td class="value wrapp"   v-if="item.id==activeMark"><input :placeholder="item.name" v-model="item.name" @input = "edit(item.idx,'name')" class="input inputs"/></td>
+                  <td class="value"  v-if="item.id==activeMark"><input :placeholder="item.nameMen" v-model="item.nameMen" @input = "edit(item.idx,'nameMen')" class="input inputs"/></td>
+                  <td class="value"  v-if="item.id==activeMark"><input :placeholder="item.data" v-model="item.data" @input = "edit(item.idx,'data')" class="input inputs"/></td>
+                  <td  class="value" v-if="item.id==activeMark"><input :placeholder="item.statusEls" v-model="item.statusEls" @input = "edit(item.idx,'statusEls')" class="input inputs"/></td>
+                  <td class="value"  v-if="item.id==activeMark"><input :placeholder="item.comments" v-model="item.comments" @input = "edit(item.idx,'comments')" class="input inputs"/></td>
+                  <td class="value"  v-if="item.id==activeMark"><input v-if="item.ott==''" type="text" class="input inputlinck" placeholder="Введите ссылку" @input = "edit(item.idx,'ott')"/>
+                    <img v-if="item.ott!=''" :src="item.ott" class="imgott"/>
+                  </td>
+                  <td class="value dellicon"  v-if="item.id==activeMark"><input type="button" value="🗑" :id="index" class="btn btninput" @click="delbd(item.idx)"/></td>
                 </tr>
-  
-            <tr v-for="(item, index) in arrElls"  
-                  :key="index">
-                  <td class="value wrapp"  v-if="item.id==activeMark"><input :placeholder="item.name" v-model="item.name" class="input"/></td>
-                  <td class="value"  v-if="item.id==activeMark"><input :placeholder="item.nameMen" v-model="item.nameMen" class="input"/></td>
-                  <td class="value"  v-if="item.id==activeMark"><input :placeholder="item.data" v-model="item.data" class="input"/></td>
-                  <td  class="value" v-if="item.id==activeMark"><input :placeholder="item.statusEls" v-model="item.statusEls" class="input"/></td>
-                  <td class="value"  v-if="item.id==activeMark"><input :placeholder="item.comments" v-model="item.comments" class="input"/></td>
-            </tr>
-          
-        </tbody>    
-    </table>
-    <p><input placeholder="Наименование вкладки"  v-model="nameMark" class="input"/>
-    <input type="button" value="Добавить вкладку" class="btn" @click="addMark">
-    </p> 
-   
-    <p>
-    <input placeholder="Цвет"  v-model="name" class="input"/>
-    <input placeholder="Менеджер"  v-model="nameMen" class="input"/>
-    <input placeholder="Дата"  v-model="data" class="input"/>
-    <input placeholder="Статус"  v-model="statusEls" class="input"/>
-    <input placeholder="Комментарий"  v-model="info" class="input"/>
-    </p>
-    <p>
-    <input type="button" value="Добавить эллемент таблицы" class="btn" @click="addElls">
-    </p>
-    
+       </tbody>
+
+  </table>
+  <div class="wrappbtn">
+  <input type="button" class="addbtn" value="+" @click="addElls"/>
   </div>
-  </template>
+  <p><input placeholder="Наименование вкладки"  v-model="nameMark" class="input"/>
+  <input type="button" value="Добавить вкладку" class="btn" @click="addMark">
+  </p> 
+  
+  
+</div>
+</template>
   
   <script>
   export default {
@@ -82,10 +69,26 @@
   mounted() {
   this.$nextTick(function () {
     this.getdata()
+    console.log(this.$route)
     
   })
   },
   methods: {
+  async edit(index,nval){
+    const edit = await this.$axios
+          .$post("https://стильный-камень.рф/api/components/saveTable.php",{
+            action: 'edit',
+            idx:index,
+            value:event.target.value,
+            nameval:nval
+            })
+          .then((data) => {
+             this.temp = edit
+            })
+          .catch((err) => {
+            console.log(err);
+            });
+   },
    async delbd(index){
     const del = await this.$axios
           .$post("https://стильный-камень.рф/api/components/saveTable.php",{
@@ -96,24 +99,28 @@
           .then((data) => {
             console.log(del);
             this.temp=data
+            this.getdata("del");
             })
           .catch((err) => {
             console.log(err);
             });
     },
-    async getdata(){
+    async getdata(ins){
       const user = await this.$axios
           .$post("https://стильный-камень.рф/api/components/saveTable.php",{
             action: 'getting',            
           })
           .then((data) => {
+            
             console.log(data);
             this.getell=data;
+            if(!ins){
             this.user = data;
             this.temp2 = data;
             this.num=this.user.length
             this.gettabs();
-            })
+            }
+           })
           .catch((err) => {
             console.log(err);
             });
@@ -129,38 +136,20 @@
       this.user = new Set(this.user);
       this.user = this.user 
     },
-     addElls(evt){
-     this.arrElls.push(
-        {
-          id:this.activeMark,
-          name:this.name,
-          nameMen:this.nameMen,
-          data:this.data,
-          statusEls:this.statusEls,
-          comments:this.info,
-          }
-        )
-        this.addbd()      
-    }, 
-    async addbd(evt){ 
+     async addElls(){
       const data = await this.$axios
-        .$post("https://стильный-камень.рф/api/components/saveTable.php", {
-            arr: this.arrElls,
-            action: 'save',
+        .$post("https://стильный-камень.рф/api/components/saveTable.php", {            
+            action: 'add', 
             id:this.activeMark,
-            name:this.name,
-            nameMen:this.nameMen,
-            data:this.data,
-            statusEls:this.statusEls,
-            comments:this.info,
-           })
+            })
           .then((data) => {
-             this.temp2 = data
+             this.temp = data;
+             this.getdata('insert');
              })
           .catch((err) => {
             console.log(err);
-          });
-    },   
+          });   
+    }, 
     changeMark(ev){
       this.activeMark=ev.target.id
     }
@@ -174,7 +163,8 @@
   }
   .input{
     border: 1px solid black;
-    height: 2.7vw;
+    height: 53px;
+    padding: 10px;
     }
   .btn{
     background-color: #c8601b;
@@ -212,11 +202,12 @@
   .wrapp{
   display: flex;
   flex-direction: row;
+  border: none;
   }
   .btninput {
     border-radius: 50px;
-    width: 1vw;
-    height: 2vw;
+    width: 10px;
+    height: 26px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -228,13 +219,14 @@
     border: none;
     outline: none;
     color: black;
+    font-size: 18px;
   }
   tbody{
   background-color: #BDD0D0;
   }
   th{
-  padding: 1vw;
-  font-size: 1vw; 
+    padding: 10px;
+    font-size: 20px; 
   }
   tr:hover{
   background-color: #E3AF8D;
@@ -244,5 +236,49 @@
   }
   .bgc{
   background-color: #EEEEEE;
-  }   
+  }  
+  .dnone{
+    display: none;
+  } 
+  .left-menu {
+    display: none;
+  }
+  .tables{
+    margin-left: -51%;
+    padding: 5vw;
+  }
+  .dellicon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+  }
+  .wrappbtn{
+    display: flex;
+    flex-direction: row;
+  }
+  .addbtn,.delbtn{
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+    font-size: 49px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .addbtn:hover,.delbtn:hover{
+    background-color: #c8601b;
+    color: white; 
+  }
+  .inputlinck{
+    margin-left: 9px;
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .imgott{
+    width: 287px;
+    height: 54px;
+  }
   </style>
