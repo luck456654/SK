@@ -1,7 +1,6 @@
 <template>
   <div> 
-    {{ getell }}   
-  <div v-if="!auth">
+   <div v-if="!auth">
   <div class="formauth">
     <input placeholder="Введите имя" class="submiti" v-model="authlogin"/>
     <input placeholder="Введите пароль" class="submiti" v-model="authpassword"/>
