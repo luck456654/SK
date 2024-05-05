@@ -47,6 +47,7 @@
   <script>
   export default {
   name: "Table",
+  layout: 'calc2',
   data() {
     return {
      activeMark:"Акрил", 
@@ -243,9 +244,9 @@
   .left-menu {
     display: none;
   }
-  .tables{
-    margin-left: -51%;
-    padding: 5vw;
+  
+  body{
+    overflow-x:scroll; 
   }
   .dellicon{
     display: flex;
@@ -269,16 +270,14 @@
     background-color: #c8601b;
     color: white; 
   }
-  .inputlinck{
-    margin-left: 9px;
-    padding: 10px;
-    font-size: 20px;
-    margin-right: 12px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-  .imgott{
-    width: 287px;
-    height: 54px;
-  }
-  </style>
+ .imgott,.inputlinck{   
+    width: 14vw;
+    height: 3vw;
+    margin: 9px;
+}
+  
+  .tables{
+    padding-top: 5vw;
+    overflow: auto;
+    }
+ </style>
